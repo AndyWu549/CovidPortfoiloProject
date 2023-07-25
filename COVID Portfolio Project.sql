@@ -93,7 +93,7 @@ order by 1,2
 Select date
 , SUM(new_cases) as Total_Cases
 , SUM(cast(new_deaths as int)) as Total_Deaths
-,SUM(cast(new_deaths as int))/SUM(New_cases)*100 as DeathPercentage
+, SUM(cast(new_deaths as int))/SUM(New_cases)*100 as DeathPercentage
 FROM CovidProject.dbo.CovidDeaths$
 WHERE continent is not null
 GROUP BY date
@@ -102,7 +102,7 @@ ORDER BY 1,2
 -- Total number of cases, deaths and death percentage
 Select SUM(new_cases) as Total_Cases
 , SUM(cast(new_deaths as int)) as Total_Deaths
-,SUM(cast(new_deaths as int))/SUM(New_cases)*100 as DeathPercentage
+, SUM(cast(new_deaths as int))/SUM(New_cases)*100 as DeathPercentage
 FROM CovidProject.dbo.CovidDeaths$
 WHERE continent is not null
 ORDER BY 1,2
