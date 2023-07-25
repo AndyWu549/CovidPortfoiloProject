@@ -2,9 +2,9 @@ Select *
 From CovidProject.dbo.CovidDeaths$
 order by 3,4
 
---Select *
---From CovidProject.dbo.CovidVaccinations$
---order by 3,4
+Select *
+From CovidProject.dbo.CovidVaccinations$
+order by 3,4
 
 -- Select Data that we are going to be using
 
